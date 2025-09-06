@@ -9,8 +9,8 @@ let counter = 0;
 function draw() {
   background(0, 0, 0);
   noStroke();
-  for (let y = 0; y < height; y++) {
-    for (let x = 0; x < width; x++) {
+  for (let y = 0; y < height / size; y++) {
+    for (let x = 0; x < width / size; x++) {
       const value = noise(x / divider, y / divider, counter) * size;
 
       if (value < size * 0.4) {
