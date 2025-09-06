@@ -1,7 +1,12 @@
 [
   {
-    "file": "experiments/example.js",
-    "name": "Name of your experiment",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "file": "experiments/square-colors.js",
+    "name": "Colours",
+    "description": "Based off of one of Garrit's examples, but with my own twist."
+  },
+  {
+    "file": "experiments/uneven-lines.js",
+    "name": "Lines",
+    "description": "Based off of one of Garrit's and the lectures examples, but with my own twist."
   }
 ]
