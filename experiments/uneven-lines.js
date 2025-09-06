@@ -14,7 +14,7 @@ function draw() {
     push();
     translate(0, i * 100);
     beginShape(1);
-    for (let x = 0; x < 600; x++) {
+    for (let x = 0; x < width; x++) {
       const y = originalY + noise(x / divider) * i * 30;
       vertex(x, y);
     }

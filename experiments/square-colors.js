@@ -4,15 +4,13 @@ function setup() {
 }
 const size = 10;
 const divider = 10;
-const numRows = 100;
-const numCols = 100;
 let counter = 0;
 
 function draw() {
   background(0, 0, 0);
   noStroke();
-  for (let y = 0; y < numRows; y++) {
-    for (let x = 0; x < numCols; x++) {
+  for (let y = 0; y < height; y++) {
+    for (let x = 0; x < width; x++) {
       const value = noise(x / divider, y / divider, counter) * size;
 
       if (value < size * 0.4) {
