@@ -44,7 +44,7 @@ function drawLayers(x, y, size, layers) {
 }
 function draw() {
   for (let y = 0; y < 10; y++) {
-    for (let x = 0; x < 10; x++) {
+    for (let x = 0; x < 14; x++) {
       drawLayers(size / 2 + x * size, size / 2 + y * size, size, currentLayer);
     }
   }
