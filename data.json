@@ -18,5 +18,10 @@
     "file": "experiments/squares.js",
     "name": "Squares",
     "description": "Based off of one of Garrit's and the lectures examples, but with my own twist. Click to add layers, after 10 clicks it will restart."
+  },
+  {
+    "file": "experiments/particles.js",
+    "name": "Particles",
+    "description": "Experimenting with particles. Click and drag to draw."
   }
 ]
