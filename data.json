@@ -28,5 +28,10 @@
     "file": "experiments/Particles2.js",
     "name": "Trees",
     "description": "Experimenting with particles."
+  },
+  {
+    "file": "experiments/flowFields.js",
+    "name": "Flow Fields",
+    "description": "Experimenting with flow fields."
   }
 ]
