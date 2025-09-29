@@ -62,6 +62,7 @@ class Agent {
 
 function setup() {
   createCanvas(innerWidth, innerHeight);
+  background(0, 0, 0);
   field = generateField();
   generateAgents();
 }
@@ -84,7 +85,7 @@ function generateAgents() {
     let agent = new Agent(
       Math.random() * innerWidth,
       Math.random() * innerHeight,
-      4,
+      3,
       0.1
     );
     agents.push(agent);
