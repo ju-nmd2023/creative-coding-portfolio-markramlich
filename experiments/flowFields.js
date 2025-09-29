@@ -69,7 +69,7 @@ function setup() {
 
 function generateField() {
   let field = [];
-  noiseSeed(Math.random() * 50);
+  noiseSeed(Math.random() * 30);
   for (let x = 0; x < maxCols; x++) {
     field.push([]);
     for (let y = 0; y < maxRows; y++) {
@@ -81,11 +81,11 @@ function generateField() {
 }
 
 function generateAgents() {
-  for (let i = 0; i < 200; i++) {
+  for (let i = 0; i < 400; i++) {
     let agent = new Agent(
       Math.random() * innerWidth,
       Math.random() * innerHeight,
-      3,
+      2,
       0.1
     );
     agents.push(agent);
