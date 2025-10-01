@@ -11,12 +11,12 @@
   },
   {
     "file": "experiments/square-colors.js",
-    "name": "Changing Colours",
+    "name": "Changing Colors",
     "description": "Based off of one of Garrit's video examples, but with my own twist."
   },
   {
     "file": "experiments/colors2.js",
-    "name": "Changing Colours part 2",
+    "name": "Changing Colors part 2",
     "description": "Based off of one of Garrit's video examples, but with my own twist."
   },
   {
@@ -31,7 +31,7 @@
   },
   {
     "file": "experiments/particles.js",
-    "name": "Particle Artowrk",
+    "name": "Particle Artwork",
     "description": "Create your own artwork by clicking and draging. Move the mouse up and down to create Music"
   },
   {
