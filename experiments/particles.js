@@ -1,3 +1,5 @@
+// Had help from a classmate, Reinis Muiznieks, to help set up tone js and just get it started as I was having trouble
+// lerned how to create the particles from here: https://codepen.io/pixelkind/pen/gOZwoVX
 let synth, analyser;
 let notes = ["C4", "D4", "E4", "F4", "G4", "A4", "B4", "C5"];
 
@@ -21,7 +23,6 @@ class Particle {
     push();
     translate(this.position.x, this.position.y);
     noStroke();
-    // fill(200, 200, 0, 10);
     fill(random(255), 50, random(255), 10);
     ellipse(0, 0, 10);
     pop();
@@ -82,7 +83,3 @@ function draw() {
     }
   }
 }
-
-// function mouseClicked() {
-//   generateParticles(mouseX, mouseY);
-// }

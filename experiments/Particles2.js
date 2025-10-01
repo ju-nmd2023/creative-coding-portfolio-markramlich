@@ -1,3 +1,5 @@
+// Had help from a classmate, Reinis Muiznieks, to help set up tone js and just get it started as I was having trouble
+// Learned how to create the particles from here: https://codepen.io/pixelkind/pen/gOZwoVX
 let startflower = 0;
 let particles = [];
 let lines = [];

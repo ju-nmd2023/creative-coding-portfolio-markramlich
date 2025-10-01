@@ -1,3 +1,4 @@
+//Learned how to create flow fields from here: https://codepen.io/pixelkind/pen/OJrRzOm
 class Agent {
   constructor(x, y, maxSpeed, maxForce) {
     this.position = createVector(x, y);

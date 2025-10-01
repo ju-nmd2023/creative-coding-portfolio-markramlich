@@ -1,37 +1,42 @@
 [
   {
-    "file": "experiments/square-colors.js",
-    "name": "Colours",
-    "description": "Based off of one of Garrit's examples, but with my own twist."
-  },
-  {
     "file": "experiments/uneven-lines.js",
-    "name": "Lines",
+    "name": "Uneven Lines",
     "description": "Based off of one of Garrit's and the lectures examples, but with my own twist."
   },
   {
+    "file": "experiments/example.js",
+    "name": "Silly bands",
+    "description": "Based off of Garrit's and the lectures examples, Uneven lines. "
+  },
+  {
+    "file": "experiments/square-colors.js",
+    "name": "Changing Colours",
+    "description": "Based off of one of Garrit's video examples, but with my own twist."
+  },
+  {
     "file": "experiments/Second-square.js",
-    "name": "Squares",
-    "description": "Based off of one of Garrit's and the lectures examples, but with my own twist. "
+    "name": "Structure of Squares",
+    "description": "Inspires by Vera Molnár's art, specifically the structure of squares."
   },
   {
     "file": "experiments/squares.js",
-    "name": "Squares",
-    "description": "Based off of one of Garrit's and the lectures examples, but with my own twist. Click to add layers, after 10 clicks it will restart."
+    "name": "The creation of Structure of Squares",
+    "description": "Inspires by Vera Molnár's art. Click to add layers, after 10 clicks it will restart."
   },
   {
     "file": "experiments/particles.js",
-    "name": "Particles",
-    "description": "Experimenting with particles. Click and drag to draw."
+    "name": "Particle Artowrk",
+    "description": "Create your own artwork by clicking and draging. Move the mouse up and down to create Music"
   },
   {
     "file": "experiments/Particles2.js",
     "name": "Trees",
-    "description": "Experimenting with particles."
+    "description": "Using particles to create my own art. Inspired by examples from the lectures."
   },
   {
     "file": "experiments/flowFields.js",
     "name": "Flow Fields",
-    "description": "Experimenting with flow fields."
+    "description": "Using flow fields to create art. Inspired by examples from the lectures."
   }
 ]
