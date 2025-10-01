@@ -29,7 +29,7 @@ class Particle {
   }
 
   isDead() {
-    return this.lifespan <= 50;
+    return this.lifespan <= 100;
   }
 }
 
