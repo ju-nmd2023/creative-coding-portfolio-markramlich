@@ -4,6 +4,9 @@ let lines = [];
 let flowerPositions = [];
 let nextIndex = 0;
 let startTime = 0;
+let synth, analyser;
+let notes = ["C4", "D4", "E4", "F4", "G4", "A4", "B4", "C5"];
+let currentNoteIndex = 0;
 
 class Particle {
   constructor(x, y) {
@@ -49,6 +52,22 @@ function setup() {
     xPos += random(20, 120);
   }
   startTime = millis();
+
+  if (typeof Tone !== "undefined") {
+    synth = new Tone.Synth({
+      oscillator: { type: "sine" },
+      envelope: {
+        attack: 0.2,
+        decay: 0.3,
+        sustain: 0.5,
+        release: 20,
+        frequency: 4,
+        depth: 0.5,
+      },
+    }).toDestination();
+    analyser = new Tone.Analyser("fft", 64);
+    synth.connect(analyser);
+  }
 }
 
 function generateParticles(x, y) {
@@ -57,6 +76,11 @@ function generateParticles(x, y) {
     const py = y + random(-10, 10);
     const particle = new Particle(px, py);
     particles.push(particle);
+  }
+
+  if (synth) {
+    synth.triggerAttackRelease(notes[currentNoteIndex], "8n");
+    currentNoteIndex = (currentNoteIndex + 1) % notes.length;
   }
 }
 
