@@ -1,3 +1,6 @@
+let synth, analyser;
+let notes = ["C4", "D4", "E4", "F4", "G4", "A4", "B4", "C5"];
+
 class Particle {
   constructor(x, y) {
     this.position = createVector(x, y);
@@ -31,6 +34,21 @@ class Particle {
 
 function setup() {
   createCanvas(innerWidth, innerHeight);
+  if (typeof Tone !== "undefined") {
+    synth = new Tone.Synth({
+      oscillator: { type: "triangle" },
+      envelope: {
+        attack: 2,
+        decay: 3,
+        sustain: 1,
+        release: 20,
+        frequency: 4,
+        depth: 5,
+      },
+    }).toDestination();
+    analyser = new Tone.Analyser("fft", 64);
+    synth.connect(analyser);
+  }
 }
 
 function generateParticles(x, y) {
@@ -39,6 +57,10 @@ function generateParticles(x, y) {
     const py = y + random(-10, 10);
     const particle = new Particle(px, py);
     particles.push(particle);
+  }
+  if (synth) {
+    let noteIndex = floor(map(y, 0, height, notes.length - 1, 0));
+    synth.triggerAttackRelease(notes[noteIndex], "8n");
   }
 }
 
