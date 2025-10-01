@@ -36,8 +36,8 @@
   },
   {
     "file": "experiments/flowFields2.js",
-    "name": "Trees",
-    "description": "Using particles to create my own art. Inspired by examples from the lectures."
+    "name": "Waves",
+    "description": "Using Flow Fields to create my own art. Inspired by examples from the lectures."
   },
   {
     "file": "experiments/flowFields.js",
