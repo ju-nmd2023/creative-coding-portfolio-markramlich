@@ -68,7 +68,7 @@ function generateParticles(x, y) {
 let particles = [];
 
 function draw() {
-  background(0, 0, 0);
+  background(0, 0, 50);
 
   if (mouseIsPressed) {
     generateParticles(mouseX, mouseY);
