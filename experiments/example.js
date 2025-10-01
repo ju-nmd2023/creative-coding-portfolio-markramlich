@@ -1,35 +1,23 @@
 function setup() {
   createCanvas(innerWidth, innerHeight);
-  background(34, 39, 46);
+  background(0, 0, 0);
 }
 
 function draw() {
-  background(34, 39, 46, 40);
-  noStroke();
-  fill(108, 182, 255);
+  let x1 = 0;
 
-  push();
-  translate(width / 2, height / 2);
+  for (let i = 1.6; i <= 30; i += 1) {
+    let y1 = height / i;
+    x1 = 0;
+    stroke(random(255), random(255), random(255));
+    for (let x2 = 10; x2 <= width; x2 += 10) {
+      let y2 = height / i + random(-20, 20);
 
-  push();
-  rotate(frameCount / 8);
-  ellipse(25, 0, 50);
-  pop();
+      line(x1, y1, x2, y2);
+      x1 = x2;
+      y1 = y2;
+    }
+  }
 
-  push();
-  rotate(-frameCount / 10);
-  ellipse(75, 0, 50);
-  pop();
-
-  push();
-  rotate(frameCount / 12);
-  ellipse(125, 0, 50);
-  pop();
-
-  push();
-  rotate(-frameCount / 14);
-  ellipse(175, 0, 50);
-  pop();
-
-  pop();
+  noLoop();
 }

@@ -15,6 +15,11 @@
     "description": "Based off of one of Garrit's video examples, but with my own twist."
   },
   {
+    "file": "experiments/colors2.js",
+    "name": "Changing Colours part 2",
+    "description": "Based off of one of Garrit's video examples, but with my own twist."
+  },
+  {
     "file": "experiments/Second-square.js",
     "name": "Structure of Squares",
     "description": "Inspires by Vera Molnár's art, specifically the structure of squares."
